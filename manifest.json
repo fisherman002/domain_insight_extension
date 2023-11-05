@@ -1,0 +1,27 @@
+{
+    "name": "Domain Insight",
+    "description": "Search Domain Whois and Query IP address",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://*.baidubce.com/",
+        "https://*.shodan.io/"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    }
+}
